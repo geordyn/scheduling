@@ -5,7 +5,7 @@ mkdir db
 
 # runs mongod using local dir, sends to the background
 # (no journal to keep local db dir small)
-mongod --dbpath=db/ --fork --nojournal --syslog &
+mongod --dbpath=db/ --fork --nojournal --syslog
 
 # starts the server, sends to background
 nohup node server &
