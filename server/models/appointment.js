@@ -8,11 +8,9 @@ var Appointment = new Schema({
 	end: { type: Date },
 	client: { type: Schema.Types.ObjectId, ref: 'Client' },
 	teamMember: { type: Schema.Types.ObjectId, ref: 'Team' },
-	description: { type: String }
+	description: { type: String },
 
 });
-
-
 
 
 

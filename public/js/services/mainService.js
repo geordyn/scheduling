@@ -12,11 +12,13 @@ angular.module('app')
 
 
   this.getProducts = function () {
+    //   console.log('getProducts hit')
     return $http({
-      method: 'GET',
-      url: '/api/products'
+        method: 'GET',
+        url: '/api/products'
     }).then(function (res) {
-      return res.data;
+        // console.log('getProducts SVC', res);
+    //   return res.data;
     });
   };
 
